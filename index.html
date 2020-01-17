@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+	 <head>
+         <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+		 <meta name="description" content="Сайтов с онлайн играми существует великое множество, так почему же вы должны провести следующие несколько минут именно на gamasexual.ru? Ответ прост: мы так же, как и вы, очень любим играть в бесплатные онлайн игры &mdash; без торрента, без регистрации, без установки и прочей ненужной ерунды...">
+         <meta property="og:title" content="Игры онлайн 😜 · Играть бесплатно" />
+         <meta property="og:description" content="Сайтов с онлайн играми существует великое множество, так почему же вы должны провести следующие несколько минут именно на gamasexual.ru? Ответ прост: мы так же, как и вы, очень любим играть в бесплатные онлайн игры &mdash; без торрента, без регистрации, без установки и прочей ненужной ерунды..." />
+		 <style>
+			@font-face {
+                font-family: 'Molot';
+                src: url('molot.otf') format('opentype');
+            };
+			body { font-family: 'Molot'; }
+			div { font-family: 'Molot'; }
+		 </style>
+		 <link rel="preload" href="molot.otf" as="font" />
+     </head>
+	 <body itemscope itemtype="http://schema.org/WebPage">
+        <img id="drawMe" src="1280x720.jpg" width="800" height="450" style="display: none" />
+		<canvas id="myCanvas" width="1280" height="720"></canvas>
+		<script>
+		    window.addEventListener('load', function() {
+				var c = document.getElementById('myCanvas');
+				var ctx = c.getContext("2d");
+				var img = document.getElementById('drawMe');
+				var txt = 'Norm tak';
+				
+				ctx.drawImage(img, 0, 0);
+				
+				ctx.textBaseline = 'top';
+				
+				ctx.font = '87px Molot';
+				ctx.fillStyle = '#3517ca';
+				ctx.fillRect(63, 450, ctx.measureText(txt).width+60, 110)
+                ctx.fillStyle = '#ffffff';
+				ctx.fillText(txt, 89, 463);
+				
+				ctx.font = '61px Molot';
+				ctx.fillStyle = '#ff0000';
+				ctx.fillRect(63, 584, 692, 88);
+				ctx.fillStyle = '#ffffff';
+				ctx.fillText('WATCH AND PLAY NOW', 89, 597);
+			});
+		</script>
+    </body>
+</html>
